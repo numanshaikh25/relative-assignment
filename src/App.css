@@ -1,38 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .App {
-  text-align: center;
-}
+  background-color: #13172b;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Tomorrow", sans-serif;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.trending {
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 105vh;
+  padding: 0 5.438rem;
+}
+.card {
+  padding-top: 3.125rem;
+  width: 18.171rem;
+  height: 25.005rem;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.price-container {
+  width: 15.125rem;
+  height: 2.5rem;
+  color: #ecf0ff;
+  box-shadow: rgba(137, 137, 137, 0.1) 0px 2px 0px 0px inset;
+  margin: auto;
+  background-color: #14172b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tvl-container {
+  width: 15.125rem;
+  height: 2.5rem;
+  color: #ecf0ff;
+  box-shadow: rgba(137, 137, 137, 0.1) 0px 2px 0px 0px inset;
+  margin: auto;
+  background-color: #14172b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-pair-container {
+  width: 7.609rem;
+  height: 2.5rem;
+  color: #ecf0ff;
+  box-shadow: rgba(137, 137, 137, 0.1) 0px 2px 0px 0px inset;
+  margin: auto;
+  background-color: #14172b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-container {
+  height: 4.443rem;
+  display: flex;
+}
+.bottom-container {
+  background-color: #1c1e33;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.c {
+  height: 100%;
+  width: 100%;
+}
+.mid {
+  background-color: #1c1e33;
+}
+.left {
+  background-color: #1c1e33;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 47px;
+}
+.right {
+  background-color: #1c1e33;
+  border-top-left-radius: 47px;
+  border-top-right-radius: 18px;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1e33;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid #13172b;
+}
+
+.trending {
+  display: flex;
+  align-items: center;
+}
+svg path {
+  fill: #dc1fff;
 }
